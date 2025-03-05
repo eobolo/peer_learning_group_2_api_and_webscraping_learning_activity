@@ -70,8 +70,8 @@ while len(product_url_list) < desired_quantity:
     product_url_list.append(product_url)
   page_number += 1
 
-print(len(product_url_list))
 
+# fetching each image and downloading it to their respective folders
 for product_url in product_url_list:
   product_folder = os.path.join("products", product_name)
   os.makedirs(product_folder, exist_ok=True)
